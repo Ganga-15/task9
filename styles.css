@@ -1,0 +1,240 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    font-size: 5vw;
+    padding: 2vh;
+}
+.li{
+    display: flex;
+    list-style-type:none;
+    font-size: 2vw;
+    gap: 7vw;
+    margin-top: 7vh;
+
+}
+.style{
+    color: rgb(227, 94, 12);
+    font-size: 5vh;
+
+}
+ div .order ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: black;
+    background-color: rgb(155, 21, 103);
+    position: absolute;
+    right:0;
+    top: 0;
+    height: 100vh;
+     min-width: 30vw;
+     list-style: none;
+     padding: 10px 15px;
+}
+.collection{
+    display: none;
+}
+
+.one
+{
+    color: black;
+    font-size: 1rem;
+}
+.dora button
+{
+    font-size: 4vh;
+    color: black;
+    background-color: rgb(63, 14, 155);
+    border: none;
+    
+    border-radius: 1vh;
+}
+.dora{
+    margin-top: -8vh;
+    margin-left: 55vw;
+}
+
+main{
+    display: flex;
+     justify-content: center;
+     align-items:center;
+    
+}
+.two h2{
+    font-size: 3vw;
+    margin-top: 11vh;
+    margin-left: 10vw;
+}
+span{
+    color: rgb(214, 27, 136);
+}
+.two{ 
+    font-size: 0;
+    float: left;
+    width: 50%;
+}
+
+.two p
+
+{  display: flex;
+    color: rgb(200, 188, 236);
+    margin-top:1vh;
+    font-size: 3vh;
+    width: 38vw;
+    margin-left:10vw;
+
+}
+
+
+.two button{
+    display: flex;
+    margin-top:1vh;
+    padding: 0.7vh 3vw;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 0.7vw;
+    background-color: rgb(211, 41, 140);
+    color: whitesmoke;
+    cursor: pointer;
+    margin-left: 10vw;
+    }
+    
+.three{
+    float: right;
+    width: 40vw;
+    height: 50vh;
+}
+.three img{
+    display: flex;
+    width: 40vw;
+    height: 40vh;
+    margin-top: 10vh; 
+        
+}
+.pic:hover{
+    transform:rotate(-5deg) scale(1.1);
+    transition: 1s;
+}
+@media  screen and (max-width: 480px)
+{
+ .style{
+    font-size:5vh;
+ } 
+ .li {
+    display: none;
+ } 
+.dora button
+{
+    font-size: 3vh; 
+    
+}
+.dora{
+    display: flex;
+    margin-left: 6vw;
+    margin-top: 1vh;
+}
+.value{
+    margin-left: 1vw;
+
+}
+
+main{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top:1vh;
+}
+.three img {
+margin-top: 0.5vh;
+}
+.two{
+margin-top: -19vh;
+margin-left: -10vw;
+
+}
+.two p {
+    width: 51vw;
+}
+.two h2{
+    font-size: 3.8vh;
+}
+nav div.order {
+    display: none;
+}
+.collection{
+    display: block;
+}
+
+  nav div.collection button:focus + div.order{
+        display:block ;
+     }
+
+}
+
+/* tab screen*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .style{
+        font-size: 4vh;
+    }
+    .li{
+        font-size: 2vw;
+    }
+    .dora button{
+        font-size: 3vh;
+    }
+    main{
+        padding-top: 15vh;
+    }
+    .two{
+        font-size: 2.5vw;
+    }
+    .two h2{
+        font-size: 5vw;
+    }
+    .two p{
+        font-size: 3vw;
+    }
+    .two button{
+        font-size: 3.5vw;
+    }
+    .three img{
+        width: 30vw;
+        height: 35vh;
+    }
+}
+.three{
+    animation-name: circle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    
+}
+
+@keyframes circle
+{
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(15px,0);
+    }
+    50%{
+        transform: translate(15px,15px)scale(0.9,1);
+        }
+        75%{
+            transform: translate(0px,15px);   
+        }
+        
+    }
